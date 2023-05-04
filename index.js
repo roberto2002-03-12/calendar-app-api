@@ -7,7 +7,7 @@ const cors = require('cors');
 const app = express();
 
 //cors
-app.use(cors());
+app.use(cors({origin: 'http://localhost:5173/*'}));
 
 //lectura y parseo del body
 app.use(express.json());
